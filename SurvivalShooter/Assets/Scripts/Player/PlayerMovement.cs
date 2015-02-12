@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
 	public float speed = 6f;
 
 	Vector3 movement;
@@ -19,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
 	void FixedUpdate() {
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
-
 		Move(h, v);
 		Turning();
 		Animating(h, v);
