@@ -561,6 +561,7 @@ GameObject:
   - 82: {fileID: 302023991}
   - 195: {fileID: 302023997}
   - 114: {fileID: 302023996}
+  - 114: {fileID: 302023998}
   m_Layer: 9
   m_Name: Zombunny
   m_TagString: Untagged
@@ -647,7 +648,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302023989}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .800000012
@@ -727,6 +728,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &302023998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302023989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: .5
+  attackDamage: 10
 --- !u!1 &302082060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +3873,7 @@ GameObject:
   - 136: {fileID: 1265265258}
   - 82: {fileID: 1265265257}
   - 114: {fileID: 1265265256}
+  - 114: {fileID: 1265265261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3995,6 +4010,24 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1265265261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265265254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 70
+  healthSlider: {fileID: 1296034250}
+  damageImage: {fileID: 1362092765}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: .100000001}
 --- !u!1 &1286693606
 GameObject:
   m_ObjectHideFlags: 0
